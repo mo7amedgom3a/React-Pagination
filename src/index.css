@@ -1,0 +1,153 @@
+body {
+  background-color: #43dec4;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: #25dace;
+}
+.nav h1{
+  margin: 0;
+}
+.nav a{
+  color: white;
+  text-decoration: none;
+}
+.nav ul{
+  display: flex;
+  list-style: none;
+}
+.nav ul li{
+  margin-right: 10px;
+}
+.sidebar{
+  background-color: #50f62b;
+  color: white;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar ul{
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li{
+  padding: 10px 20px;
+  border-bottom: 1px solid white;
+}
+.sidebar ul li a{
+  color: white;
+  text-decoration: none;
+}
+.sidebar ul li a:hover{
+  background-color: white;
+  color: #25dace;
+}
+.main{
+  margin-left: 200px;
+  padding: 20px;
+}
+.main h2{
+  margin-top: 0;
+}
+.footer{
+  background-color: #25dace;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: left;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content doesn't overflow the card */
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.user-card p {
+  margin: 5px 0;
+  overflow: hidden; /* Ensure content doesn't overflow the card */
+  text-overflow: ellipsis; /* Adds '...' at the end of overflowing text */
+}
+
+.user-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  text-size-adjust: 100%;
+  white-space: nowrap;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-item.active .page-link {
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.page-item.disabled .page-link {
+  color: #ddd;
+  cursor: not-allowed;
+}
